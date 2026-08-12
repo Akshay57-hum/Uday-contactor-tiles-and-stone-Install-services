@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* Ama Vedant Hindi Devanagari Font Declaration */
+@font-face {
+  font-family: 'Ama Vedant Hindi Devanagari';
+  src: url('/fonts/AmaVedant.ttf') format('truetype'),
+       url('/fonts/AmaVedantDevanagari.ttf') format('truetype'),
+       url('/fonts/AmaVedantBold.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ama Vedant';
+  src: url('/fonts/AmaVedant.ttf') format('truetype'),
+       url('/fonts/AmaVedantDevanagari.ttf') format('truetype'),
+       url('/fonts/AmaVedantBold.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #0a0c10;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Devanagari / Hindi Typography Utility - Ama Vedant Primary */
+.font-hindi, .font-hindi-vedant {
+  font-family: 'Ama Vedant Hindi Devanagari', 'Ama Vedant', sans-serif;
+  letter-spacing: 0.015em;
+  line-height: 1.45;
+}
+
+/* Premium Tile & Stone Textured Backgrounds */
+.tile-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.marble-texture-bg {
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.06), transparent 70%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 60px 60px, 60px 60px;
+}
+
+/* Grout Seam Line Accent */
+.grout-line {
+  background: linear-gradient(90deg, transparent 0%, rgba(245, 158, 11, 0.3) 50%, transparent 100%);
+  height: 1px;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0c10;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
